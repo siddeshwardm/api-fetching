@@ -19,7 +19,11 @@
 
 # production
 /build
-
+node_modules
+.next
+.env
+.env.local
+dist
 # misc
 .DS_Store
 *.pem
