@@ -47,18 +47,20 @@ All AI requests are handled **server-side** via Next.js API routes, ensuring API
 
 ## Project Structure
 
+```text
 gemini-task/
 ├── app/
-│ ├── api/
-│ │ └── ask/
-│ │ └── route.ts # Server-side Gemini API integration
-│ ├── page.tsx # Main UI page
-│ ├── layout.tsx # Root layout
-│ └── globals.css # Global styles
-├── .env.local # Environment variables
-├── package.json # Project dependencies and scripts
-├── next.config.js # Next.js configuration
-└── tsconfig.json # TypeScript configuration
+│   ├── api/
+│   │   └── ask/
+│   │       └── route.ts        # Server-side Gemini API integration
+│   ├── page.tsx               # Main UI page
+│   ├── layout.tsx             # Root layout
+│   └── globals.css            # Global styles
+├── .env.local                 # Environment variables
+├── package.json               # Project dependencies and scripts
+├── next.config.js             # Next.js configuration
+└── tsconfig.json              # TypeScript configuration
+
 
 
 ---
