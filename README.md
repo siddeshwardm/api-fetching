@@ -61,13 +61,11 @@ gemini-task/
 ├── next.config.js             # Next.js configuration
 └── tsconfig.json              # TypeScript configuration
 
-## Installation
 
-### 1. Clone the repository
 
-```bash
-git clone <YOUR_GITHUB_REPO_URL>
-cd gemini-task
+
+
+
 
 
 
