@@ -47,3 +47,37 @@ All AI requests are handled **server-side** via Next.js API routes, ensuring API
 
 ## Project Structure
 
+gemini-task/
+├── app/
+│ ├── api/
+│ │ └── ask/
+│ │ └── route.ts # Server-side Gemini API integration
+│ ├── page.tsx # Main UI page
+│ ├── layout.tsx # Root layout
+│ └── globals.css # Global styles
+├── .env.local # Environment variables
+├── package.json
+├── next.config.js
+└── tsconfig.json
+
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+- Google Gemini API key
+
+---
+
+## Installation
+
+### 1. Clone the Repository
+```bash
+git clone <YOUR_GITHUB_REPO_URL>
+cd gemini-task
+
+
