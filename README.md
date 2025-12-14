@@ -56,9 +56,9 @@ gemini-task/
 │ ├── layout.tsx # Root layout
 │ └── globals.css # Global styles
 ├── .env.local # Environment variables
-├── package.json
-├── next.config.js
-└── tsconfig.json
+├── package.json # Project dependencies and scripts
+├── next.config.js # Next.js configuration
+└── tsconfig.json # TypeScript configuration
 
 
 ---
