@@ -64,40 +64,14 @@ gemini-task/
 
 
 ---
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v18 or higher)
-- npm or yarn
-- Google Gemini API key
-
----
-
 ## Installation
 
-### 1. Clone the Repository
+### 1. Clone the repository
+
 ```bash
-git clone https://github.com/siddeshwardm/api-fetching.git
+git clone <YOUR_GITHUB_REPO_URL>
 cd gemini-task
 
-### 2. Install dependencies
-```bash
-git install
-
-### 3. Environmental setup
-```bash
-touch .env.local
- 
-
-### 4. Add gemini API key
-```bash
-GEMINI_API_KEY=YOUR_GEMINI_API_KEY
-
-### 4. Run project locally
-```bash
-npm run dev
 
 
 
