@@ -79,7 +79,27 @@ gemini-task/
 
 ### 1. Clone the Repository
 ```bash
-git clone <YOUR_GITHUB_REPO_URL>
+git clone https://github.com/siddeshwardm/api-fetching.git
 cd gemini-task
+
+### 2. Install dependencies
+```bash
+git install
+
+### 3. Environmental setup
+```bash
+touch .env.local
+ 
+
+### 4. Add gemini API key
+```bash
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+
+### 4. Run project locally
+```bash
+npm run dev
+
+
+
 
 
