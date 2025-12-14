@@ -1,70 +1,49 @@
-🚀 Gemini 2.0 Flash – Next.js API Integration Demo
+# Gemini 2.0 Flash – Next.js API Integration Demo
 
-This project demonstrates a clean and minimal integration of Google Gemini 2.0 Flash API using Next.js server-side API routes.
-It was built as part of an interview assignment to showcase UI design, API integration, and server-side handling in Next.js.
+A clean and minimal web application demonstrating server-side integration of **Google Gemini 2.0 Flash API** using **Next.js App Router**.
 
-Project Overview
+This project was built as part of an interview assignment to showcase **UI design**, **API integration**, and **secure server-side handling** in Next.js.
 
-The application allows users to:
+---
 
-  Enter a question or prompt
-  Click “Ask Gemini”
-  View AI-generated responses from Gemini 2.0 Flash
-  Experience a clean, colorful, and interactive UI with loading states
+## Overview
 
-All API calls are handled server-side using Next.js, keeping the frontend simple and responsive.
+The Gemini 2.0 Flash Demo allows users to:
+- Enter a question or prompt
+- Click **“Ask Gemini”**
+- Receive AI-generated responses from **Gemini 2.0 Flash**
+- Experience a clean, colorful, and interactive UI with loading states
 
-Features
+All AI requests are handled **server-side** via Next.js API routes, ensuring API keys remain secure and frontend performance stays optimal.
 
-Simple and intuitive UI
-Colorful, modern card-based design
-Loading state while waiting for API response
-Neatly formatted AI responses
-Server-side API call using Next.js App Router
+---
 
+## Tech Stack
 
+- **Framework:** Next.js (App Router)
+- **Frontend:** React + TypeScript
+- **Styling:** Custom CSS
+- **AI API:** Google Gemini 2.0 Flash
+- **Server-side:** Next.js API Routes
 
-Tech Stack
+---
 
-Next.js (App Router)
-React
-TypeScript
-CSS (custom styling)
-Google Gemini 2.0 Flash API
+## Features
 
+### UI & UX
+- Simple and intuitive prompt input
+- Colorful, modern card-based design
+- Responsive layout
+- Loading indicator while waiting for AI response
+- Neatly formatted AI-generated output
 
-Project Structure
-gemini-task/
-├── app/
-│   ├── api/
-│   │   └── ask/
-│   │       └── route.ts
-│   ├── page.tsx
-│   ├── layout.tsx
-│   └── globals.css
-├── .env.local
-├── package.json
-├── next.config.js
-└── tsconfig.json
+### API Integration
+- Server-side API call using Next.js App Router
+- Secure handling of Gemini API key
+- Clean request/response flow
+- Proper error handling and validation
 
-Clone the Repository
-git clone <YOUR_GITHUB_REPO_URL>
+---
 
+## Project Structure
 
-Navigate into the project:
-cd gemini-task
-
-
-Install Dependencies
-npm install
-
-Environment Setup
-Create a .env.local file in the root directory:
-
-GEMINI_API_KEY=YOUR_GEMINI_API_KEY
-
-API keys should never be exposed in client-side code.
-In this project, the key is accessed only in the server-side API route.
-
-Run the Project Locally
-npm run dev
