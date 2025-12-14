@@ -62,15 +62,24 @@ gemini-task/
 └── tsconfig.json              # TypeScript configuration
 
 
+## Getting Started
+
+Follow the steps below to set up and run the project locally.
 
 ---
-## Installation
 
-### 1. Clone the repository
+## Prerequisites
 
+Ensure you have the following installed on your system:
+
+- **Node.js** v18 or higher  
+- **npm** or **yarn**  
+- A valid **Google Gemini API key**
+
+You can verify your Node.js installation using:
 ```bash
-git clone <YOUR_GITHUB_REPO_URL>
-cd gemini-task
+node -v
+
 
 
 
