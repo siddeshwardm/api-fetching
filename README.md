@@ -33,8 +33,7 @@ CSS (custom styling)
 Google Gemini 2.0 Flash API
 
 
-
-📁 Project Structure
+Project Structure
 gemini-task/
 ├── app/
 │   ├── api/
