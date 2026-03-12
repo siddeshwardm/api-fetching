@@ -4,6 +4,8 @@ A clean and minimal web application demonstrating server-side integration of **G
 
 This project was built as part of an interview assignment to showcase **UI design**, **API integration**, and **secure server-side handling** in Next.js.
 
+live here : https://api-fetching-swart.vercel.app/
+
 ---
 
 ## Overview
