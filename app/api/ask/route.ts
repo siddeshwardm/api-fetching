@@ -50,9 +50,12 @@ export async function POST(req: Request) {
         .join("") || "No response from Gemini";
 
     return NextResponse.json({ text });
-  } catch (err: any) {
+  } catch (err: unknown) {
+    const message =
+      err instanceof Error ? err.message : typeof err === "string" ? err : JSON.stringify(err);
+
     return NextResponse.json(
-      { error: "Server error", message: err?.message },
+      { error: "Server error", message },
       { status: 500 }
     );
   }
