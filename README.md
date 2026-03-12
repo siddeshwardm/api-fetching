@@ -61,17 +61,3 @@ gemini-task/
 ├── next.config.js             # Next.js configuration
 └── tsconfig.json              # TypeScript configuration
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
