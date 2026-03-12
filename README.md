@@ -8,6 +8,7 @@ This project was built as part of an interview assignment to showcase **UI desig
 
 ## Overview
 
+
 The Gemini 2.0 Flash Demo allows users to:
 - Enter a question or prompt
 - Click **“Ask Gemini”**
@@ -48,7 +49,7 @@ All AI requests are handled **server-side** via Next.js API routes, ensuring API
 ## Project Structure
 
 ```text
-gemini-task/
+api-fetching/
 ├── app/
 │   ├── api/
 │   │   └── ask/
@@ -56,8 +57,74 @@ gemini-task/
 │   ├── page.tsx               # Main UI page
 │   ├── layout.tsx             # Root layout
 │   └── globals.css            # Global styles
-├── .env.local                 # Environment variables
+├── .env.example               # Example environment variables (safe to commit)
 ├── package.json               # Project dependencies and scripts
-├── next.config.js             # Next.js configuration
+├── next.config.ts             # Next.js configuration
 └── tsconfig.json              # TypeScript configuration
+
+```
+
+## Getting Started
+
+### 1) Install dependencies
+
+```bash
+npm install
+```
+
+### 2) Set up environment variables
+
+This project requires:
+
+- `GEMINI_API_KEY`
+
+Create a local env file (recommended: `.env.local`):
+
+```bash
+cp .env.example .env.local
+```
+
+Then edit `.env.local` and add your key:
+
+```dotenv
+GEMINI_API_KEY=your_real_key_here
+```
+
+### 3) Run the dev server
+
+```bash
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+## API
+
+### `POST /api/ask`
+
+Request body:
+
+```json
+{ "prompt": "Write a haiku about APIs" }
+```
+
+Response:
+
+```json
+{ "text": "..." }
+```
+
+Test with curl:
+
+```bash
+curl -s \
+	-X POST http://localhost:3000/api/ask \
+	-H 'Content-Type: application/json' \
+	-d '{"prompt":"Hello from curl"}'
+```
+
+## Recent Changes
+
+- Added `.env.example` to document required environment variables
+- Updated `.gitignore` to allow committing `.env.example` while still ignoring secret env files
 
